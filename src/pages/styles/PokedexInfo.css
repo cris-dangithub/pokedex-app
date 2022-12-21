@@ -1,0 +1,12 @@
+.c-pokedex-info-main {
+  padding: 0 1em 1em 1em;
+  display: grid;
+  gap: 2em;
+  justify-content: center;
+}
+
+@media (min-width:900px) {
+  .c-pokedex-info-main {
+    padding-top: 7em;
+  }
+}

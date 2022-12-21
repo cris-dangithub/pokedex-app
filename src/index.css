@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /*? index.css */
+  --index-root-backgroundColor: #b9b9b9;
+  /*? App */
+  --App-App-backgroundColor: #e5e5e5;
+  /*? Home */
+  --Home-home__greeting-color: #FE1936;
+  --Home-home__petition-color: #000;
+  --Home-home-footer__red-container-backgroundColor: #DD1A1A;
+  --Home-home-footer__black-container-backgroundColor: #000;
+  --Home-home-footer__circle-backgroundColor: #fff;
+  --Home-home-footer__inner-circle-backgroundColor: #212121;
+  /*? c-FormInputButton */
+  --FormInputButton-form__input_--_placeholder: #D3D3D3;
+  --FormInputButton-form__btn-color: #fff;
+  --FormInputButton-form__btn-backgroundColor: #D93F3F;
+  --FormInputButton-form__btn_-_hover: #ff3e58;
+  /*? Pokedex */
+  /*? c-SelectTypes */
+  --SelectTypes-select-type__selected-backgroundColor: #fff;
+  --SelectTypes-select-select-type__options_-_hover-backgroundColor: #ED8F8F;
+  --SelectTypes-select-select-type__options_-_hover-color: #fff;
+  /*? c-Pagination */
+  --Pagination-pagination__btn--no-active_-_hover-backgroundColor: #d1d1d1;
+  --Pagination-pagination__btn--active-color: #fff;
+
+  /*? c-Pokecard */
+  --Pokecard-background-simple--backgroundColor: #fff;
+  --Pokecard-card__titleType-color: #9F9F9F;
+  --Pokecard-card__divider-backgroundColor: #E5E5E5;
+  /*? PokedexInfo */
+  /*? c-PokeCardMainInfo */
+  --PokeCardMainInfo-c-main-info-container-backgroundColor: #fff;
+  --PokeCardMainInfo-main-info-container__divider-name-backgroundColor: #9F9F9F;
+  --PokeCardMainInfo-basic-description__title-color: #302F2F;
+  --PokeCardMainInfo-basic-description__item--types-color: #fff;
+  --PokeCardMainInfo-basic-description__item--abilities-border: #D3D3D3;
+  /*? c-TitleInfo */
+  --TitleInfo-title-info__title-color: #302F2F;
+  --TitleInfo-main-info-container__divider-name--title-info-backgroundColor: #D3D3D3;
+  /*? c-Pokeball */
+  --Pokeball-external-circle-border: #F7F5F5;
+  /*? c-PokeStat */
+  --PokeStat-poke-stat__graphic-backgroundColor: #F7F7F7;
+  /*? c-PokeCardMovements */
+  /*? Config */
+  --Config-config-card-backgroundColor: #fff;
+}
+
+.u-dark-mode {
+  /*? App */
+  --App-App-backgroundColor: #e5e5e5;
+  /*? Home */
+  --Home-home__greeting-color: #FE1936;
+  --Home-home__petition-color: #000;
+  --Home-home-footer__red-container-backgroundColor: #DD1A1A;
+  --Home-home-footer__black-container-backgroundColor: #000;
+  --Home-home-footer__circle-backgroundColor: #fff;
+  --Home-home-footer__inner-circle-backgroundColor: #212121;
+  /*? c-FormInputButton */
+  --FormInputButton-form__input_--_placeholder: #D3D3D3;
+  --FormInputButton-form__btn-color: #fff;
+  --FormInputButton-form__btn-backgroundColor: #D93F3F;
+  --FormInputButton-form__btn_-_hover: #ff3e58;
+  /*? Pokedex */
+  /*? c-SelectTypes */
+  --SelectTypes-select-type__selected-backgroundColor: #fff;
+  --SelectTypes-select-select-type__options_-_hover-backgroundColor: #ED8F8F;
+  --SelectTypes-select-select-type__options_-_hover-color: #fff;
+  /*? c-Pagination */
+  --Pagination-pagination__btn--no-active_-_hover-backgroundColor: #d1d1d1;
+  --Pagination-pagination__btn--active-color: #fff;
+
+  /*? c-Pokecard */
+  --Pokecard-background-simple--backgroundColor: #fff;
+  --Pokecard-card__titleType-color: #9F9F9F;
+  --Pokecard-card__divider-backgroundColor: #E5E5E5;
+  /*? PokedexInfo */
+  /*? c-PokeCardMainInfo */
+  --PokeCardMainInfo-c-main-info-container-backgroundColor: #fff;
+  --PokeCardMainInfo-main-info-container__divider-name-backgroundColor: #9F9F9F;
+  --PokeCardMainInfo-basic-description__title-color: #302F2F;
+  --PokeCardMainInfo-basic-description__item--types-color: #fff;
+  --PokeCardMainInfo-basic-description__item--abilities-border: #D3D3D3;
+  /*? c-TitleInfo */
+  --TitleInfo-title-info__title-color: #302F2F;
+  --TitleInfo-main-info-container__divider-name--title-info-backgroundColor: #D3D3D3;
+  /*? c-Pokeball */
+  --Pokeball-external-circle-border: #F7F5F5;
+  /*? c-PokeStat */
+  --PokeStat-poke-stat__graphic-backgroundColor: #F7F7F7;
+  /*? c-PokeCardMovements */
+}
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+
+}
+
+body {
+  margin: 0;
+  position: relative;
+  z-index: -1000;
+  background-color: #000;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+img {
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+button,
+input,
+select {
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  padding: 0;
+}
+
+input {
+  border-radius: 0;
+}
+
+select {
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+hr {
+  border: none;
+}
+
+#root {
+  background-color: var(--index-root-backgroundColor);
+  position: relative;
+  z-index: -1000;
+  min-height: 100vh;
+  overflow: hidden;
+}

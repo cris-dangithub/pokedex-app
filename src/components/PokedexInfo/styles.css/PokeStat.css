@@ -1,0 +1,48 @@
+.c-poke-stat {
+  display: grid;
+  grid-auto-rows: 1fr 1fr;
+  gap: 0.4em;
+}
+
+.poke-stat__text {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+}
+
+.poke-stat__name-stat {
+  color:var(--PokeCardMainInfo-basic-description__title-color)
+}
+.poke-stat__name-stat--hp {
+  text-transform: uppercase;
+}
+.poke-stat__number {
+  align-self: flex-end;
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+
+.poke-stat__graphic {
+  height: 100%;
+  background-color: var(--PokeStat-poke-stat__graphic-backgroundColor);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: repeat(150, 1fr);
+  overflow: hidden;
+}
+
+.poke-stat__graphic-bar {
+  height: 100%;
+  background-image: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  border-radius: 4px;
+  animation: showStats 1s;
+}
+
+@keyframes showStats {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,11 @@
+.c-title-info__title-container {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.title-info__title {
+  color: var(--TitleInfo-title-info__title-color);
+}
+.main-info-container__divider-name--title-info {
+  background-color: var(--TitleInfo-main-info-container__divider-name--title-info-backgroundColor);
+}

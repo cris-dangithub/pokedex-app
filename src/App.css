@@ -1,0 +1,10 @@
+.App {
+  max-width: 1350px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: var(--App-App-backgroundColor);
+  position: relative;
+  z-index: -1000;
+}
+
+

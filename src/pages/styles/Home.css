@@ -1,0 +1,101 @@
+.c-home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+  text-align: center;
+  padding: 1em 2em 7em 2em;
+  position: relative;
+}
+
+.home__title {
+  max-width: 500px;
+}
+
+.home__body {
+  display: grid;
+  gap: 0.5em;
+}
+
+.home__greeting {
+  font-size: 2.5rem;
+  color: var(--Home-home__greeting-color);
+}
+
+.home__petition {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--Home-home__petition-color);
+}
+
+.home-footer {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.home-footer__red-container {
+  width: 100%;
+  height: 4em;
+  background-color: var(--Home-home-footer__red-container-backgroundColor);
+}
+
+.home-footer__black-container {
+  width: 100%;
+  height: 2em;
+  background-color: var(--Home-home-footer__black-container-backgroundColor);
+  position: relative;
+}
+
+.home-footer__circle {
+  width: 5em;
+  height: 5em;
+  background-color: var(--Home-home-footer__circle-backgroundColor);
+  border: 8px solid var(--Home-home-footer__black-container-backgroundColor);
+  position: absolute;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-footer__inner-circle {
+  background-color: var(--Home-home-footer__inner-circle-backgroundColor);
+  height: 2.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid var(--Home-home-footer__black-container-backgroundColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-footer__config {
+  cursor: pointer;
+  line-height: 0;
+  transition: transform 0.2s;
+}
+
+.home-footer__config:hover {
+  transform: rotate(-45deg);
+}
+
+.home-footer__icon-config {
+  font-size: 1.1rem;
+  color: var(--App-App-backgroundColor);
+}

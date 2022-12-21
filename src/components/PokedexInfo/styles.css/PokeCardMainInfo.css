@@ -1,0 +1,159 @@
+.c-main-info-container {
+  padding: 8em 1em 1em 1em;
+  background-color: var(--PokeCardMainInfo-c-main-info-container-backgroundColor);
+  border-radius: 8px;
+  position: relative;
+  margin-top: 1em;
+  display: grid;
+  gap: 2em;
+  width: 100%;
+  max-width: 800px;
+}
+
+
+
+.main-info-container__background {
+  position: absolute;
+  border-radius: 8px 8px 0 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7em;
+}
+
+.main-info-container__background--image {
+  position: absolute;
+  top: -2em;
+  left: 0;
+  right: 0;
+  width: 8em;
+  margin: auto;
+}
+
+@media (min-width:900px) {
+  .main-info-container__background--image {
+    top: -10em;
+    width: 16em;
+  }
+}
+
+.main-info-container__header {
+  display: grid;
+  gap: 1em;
+}
+
+.main-info-container__name-pokemon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.main-info-container__divider-name {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--PokeCardMainInfo-main-info-container__divider-name-backgroundColor);
+  border-radius: 5em;
+}
+
+.main-info-container__name {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.list-poke-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.list-poke-body__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2em;
+  text-transform: capitalize;
+}
+
+.list-poke-body__title {
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+
+.list-poke-body__number {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.basic-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.basic-description__types {
+  display: grid;
+  gap: 0.5em;
+  align-self: flex-start;
+}
+
+.basic-description__title {
+  color: var(--PokeCardMainInfo-basic-description__title-color);
+  margin: auto;
+}
+
+.basic-description__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 600;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.basic-description__item {
+  justify-self: center;
+  border-radius: 0.5em;
+  width: 50%;
+  padding: 0.4em 0;
+}
+
+.basic-description__item--types {
+  color: var(--PokeCardMainInfo-basic-description__item--types-color);
+}
+
+.basic-description__item--abilities {
+  border: 1px solid var(--PokeCardMainInfo-basic-description__item--abilities-border);
+}
+
+.stat-info {
+  display: grid;
+  gap: 1em;
+}
+
+.stat-info__stats-container {
+  display: grid;
+  gap: 1em;
+}
+
+@media(min-width: 900px) {
+  .basic-description {
+    gap: 1em;
+  }
+
+  .basic-description__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .basic-description__item {
+    width: calc(50% - 0.5em) ;
+  }
+}

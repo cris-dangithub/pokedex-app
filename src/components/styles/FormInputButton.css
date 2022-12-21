@@ -1,0 +1,50 @@
+.c-form {
+  width: 100%;
+  display: flex;
+  box-shadow: 0px 0px 20px -5px rgba(0, 0, 0, 0.329);
+  position: relative;
+  z-index: 1500;
+}
+
+.c-form--home {
+  max-width: 600px;
+
+}
+
+.form__input {
+  width: 80%;
+  font-size: 1.2rem;
+  padding: 0.5em;
+}
+
+.form__input::placeholder {
+  color: var(--FormInputButton-form__input_--_placeholder);
+}
+
+.form__btn {
+  width: 30%;
+  font-size: 1.2rem;
+  color: var(--FormInputButton-form__btn-color);
+  background-color: var(--FormInputButton-form__btn-backgroundColor);
+  transition: background-color 0.4s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.form__btn:hover {
+  background-color: var(--FormInputButton-form__btn_-_hover);
+}
+
+.form--font-sizes-pokedex {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 981px) {
+
+  .form__input,
+  .form__btn {
+    font-size: 1.4rem;
+  }
+}

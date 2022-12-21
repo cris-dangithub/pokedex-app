@@ -1,0 +1,88 @@
+.c-config {
+  position: absolute;
+  width: 100%;
+  top: 7.8em;
+  bottom: 0;
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.config-card {
+  background-color: var(--Config-config-card-backgroundColor);
+  display: grid;
+  gap: 2em;
+  padding: 1em 1em 2em 1em;
+  border-radius: 1em;
+}
+
+.config-card__title {
+  text-align: center;
+}
+
+.config-card__list {
+  display: grid;
+  gap: 2em;
+}
+
+.config-card__item {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 1em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.config-card__switch {
+  height: 25px;
+  aspect-ratio: 3;
+  background-color: red;
+  border-radius: 20px;
+  padding: 3px;
+  display: flex;
+  cursor: pointer;
+  justify-self: flex-end;
+}
+
+.config-card__switch-btn {
+  background-color: black;
+  height: 100%;
+  width: 50%;
+  border-radius: 20px;
+  transition: transform 0.2s;
+}
+
+.config-card__switch-btn--active {
+  transform: translateX(100%);
+}
+
+.config-card__number {
+  position: relative;
+  width: 8em;
+}
+
+.config-card__active-option {
+  background-color: var(--SelectTypes-select-type__selected-backgroundColor);
+}
+
+.config-card__options-list {
+  position: absolute;
+  width: 100%;
+  background-color: var(--SelectTypes-select-type__selected-backgroundColor);
+}
+
+@media (min-width:981px) {
+  .config-card__title {
+    font-size: 2rem;
+  }
+
+  .config-card__item {
+    grid-template-columns: repeat(2, 300px);
+
+  }
+
+  .config-card__title-option {
+    font-size: 1.4rem;
+  }
+}

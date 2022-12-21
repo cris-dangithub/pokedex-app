@@ -1,0 +1,92 @@
+.c-header {
+  position: relative;
+  margin-bottom: 1.8em;
+}
+
+.header__title {
+  position: absolute;
+  z-index: 1000;
+  width: 15em;
+  top: 35%;
+  left: 1.5em;
+}
+
+
+
+.red-container {
+  height: 4em;
+  background-color: #DD1A1A;
+}
+
+
+
+.black-container {
+  position: relative;
+  height: 2em;
+  background-color: #0C0C0C;
+}
+
+.header__circle {
+  width: 5em;
+  height: 5em;
+  background-color: #fff;
+  border: 8px solid #000;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 1em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 981px) {
+  .c-header {
+    margin-bottom: 2.5em;
+  }
+  .red-container {
+    height: 6em;
+  }
+
+  .black-container {
+    height: 3em;
+  }
+
+  .header__title {
+    left: 3em;
+    width: 22.5em;
+  }
+
+  .header__circle {
+    right: 2.5em;
+    transform: scale(1.5);
+  }
+}
+
+.header__inner-circle {
+  background-color: #212121;
+  height: 2.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__config {
+  cursor: pointer;
+  line-height: 0;
+  transition: transform 0.2s;
+}
+
+.header__config:hover {
+  transform: rotate(-30deg);
+}
+
+.header__icon-config {
+  font-size: 1.2rem;
+  color: var(--App-App-backgroundColor);
+}

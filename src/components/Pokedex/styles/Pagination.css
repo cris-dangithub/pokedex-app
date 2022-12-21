@@ -1,0 +1,29 @@
+.c-pagination{
+  display: flex;
+  width: max-content;
+  gap: 0.5em;
+  align-self: center;
+}
+
+.pagination__btn {
+  width: 40px;
+  aspect-ratio: 1;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: var(--App-App-backgroundColor);
+  border-radius: 0.4em;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.pagination__btn--no-active:hover {
+  background-color: var(--Pagination-pagination__btn--no-active_-_hover-backgroundColor);
+}
+
+.pagination__btn--arrows {
+  font-size: 0.5rem;
+}
+
+.pagination__btn--active {
+  background-color: var(--Home-home-footer__red-container-backgroundColor);
+  color:var(--Pagination-pagination__btn--active-color);
+}

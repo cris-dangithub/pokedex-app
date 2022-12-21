@@ -1,0 +1,32 @@
+.c-poke-movements {
+  background-color: var(--PokeCardMainInfo-c-main-info-container-backgroundColor);
+  padding: 1.5em 1em;
+  border-radius: 8px;
+  display: grid;
+  gap: 1.5em;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+.poke-movements__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7em;
+  text-transform: capitalize;
+}
+
+.poke-movements__item {
+  background-color: var(--App-App-backgroundColor);
+  padding: 0.4em 1em;
+  border-radius: 2em;
+}
+
+.poke-movements__empty {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--App-App-backgroundColor);
+  filter: brightness(0.9);
+}

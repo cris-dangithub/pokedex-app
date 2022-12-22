@@ -28,7 +28,7 @@
 
 .config-card__item {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 140px);
   gap: 1em;
   justify-content: space-between;
   align-items: center;

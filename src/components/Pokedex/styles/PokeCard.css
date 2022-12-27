@@ -43,6 +43,7 @@
   justify-content: center;
   gap: 0.5em;
   font-weight: 600;
+  color: var(--Pokecard-list-type-color);
 }
 
 .card__titleType {

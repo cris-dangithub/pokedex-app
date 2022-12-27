@@ -77,6 +77,7 @@
 }
 
 .header__config {
+
   cursor: pointer;
   line-height: 0;
   transition: transform 0.2s;
@@ -88,5 +89,5 @@
 
 .header__icon-config {
   font-size: 1.2rem;
-  color: var(--App-App-backgroundColor);
+  color: #fff;
 }

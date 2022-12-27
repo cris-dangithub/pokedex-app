@@ -10,6 +10,7 @@
   aspect-ratio: 1;
   font-size: 1.1rem;
   font-weight: 500;
+  color: var(--Pagination-pagination__btn-color);
   background-color: var(--App-App-backgroundColor);
   border-radius: 0.4em;
   transition: background-color 0.2s, color 0.2s;

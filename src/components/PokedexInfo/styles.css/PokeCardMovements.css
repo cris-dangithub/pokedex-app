@@ -10,6 +10,7 @@
 }
 
 .poke-movements__list {
+  color: var(--PokeCardMainInfo-basic-description__item-color);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

@@ -62,6 +62,7 @@
 }
 
 .list-poke-body {
+  color: var(--PokeCardMainInfo-basic-description__item-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,6 +121,7 @@
 }
 
 .basic-description__item {
+  color: var(--PokeCardMainInfo-basic-description__item-color);
   justify-self: center;
   border-radius: 0.5em;
   width: 100%;

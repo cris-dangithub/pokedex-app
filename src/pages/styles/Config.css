@@ -11,6 +11,7 @@
 
 .config-card {
   background-color: var(--Config-config-card-backgroundColor);
+  color: var(--PokeCardMainInfo-basic-description__item-color);
   display: grid;
   gap: 2em;
   padding: 1em 1em 2em 1em;
@@ -37,7 +38,7 @@
 .config-card__switch {
   height: 25px;
   aspect-ratio: 3;
-  background-color: red;
+  background-color: var(--PokeCardMainInfo-main-info-container__divider-name-backgroundColor);
   border-radius: 20px;
   padding: 3px;
   display: flex;
@@ -46,7 +47,7 @@
 }
 
 .config-card__switch-btn {
-  background-color: black;
+  background-color: var(--Config-config-card-backgroundColor);
   height: 100%;
   width: 50%;
   border-radius: 20px;

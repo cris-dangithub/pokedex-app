@@ -7,6 +7,7 @@
   user-select: none;
   cursor: pointer;
   text-transform: capitalize;
+  color:var(--FormInputButton-form__input-color);
 }
 
 .select-type__selected {

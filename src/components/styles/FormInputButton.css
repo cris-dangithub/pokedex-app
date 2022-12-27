@@ -15,6 +15,8 @@
   width: 80%;
   font-size: 1.2rem;
   padding: 0.5em;
+  color: var(--FormInputButton-form__input-color);
+  background-color: var(--FormInputButton-form__input-backgroundColor);
 }
 
 .form__input::placeholder {
